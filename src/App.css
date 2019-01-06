@@ -30,3 +30,16 @@
     transform: rotate(360deg);
   }
 }
+.text-right{
+  margin-left: 55%;
+  cursor: pointer;
+}
+.center{
+  text-align: center;
+}
+.hide{
+  display: none;
+}
+.text-right:hover{
+  color: red;
+}
