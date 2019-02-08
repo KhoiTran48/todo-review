@@ -99,16 +99,16 @@ const mapStateToProps=(state)=>{
 const mapDispatchToProps=(dispatch, props)=>{
     return {
         onUpdateTask: (task)=>{
-            dispatch(Action.EDIT_TASK_REQUEST(task))
+            dispatch(Action.EDIT_TASK(task))
         },
         changeInput: (taskForm)=>{
             dispatch(Action.CHANGE_INPUT(taskForm))
         },
         onDeleteTask: (id)=>{
-            dispatch(Action.DELETE_TASK_REQUEST(id))
+            dispatch(Action.DELETE_TASK(id))
         },
         onFetchTask: (id)=>{
-            dispatch(Action.FETCH_TASK_REQUEST())
+            dispatch(Action.FETCH_TASK())
         },
     }
 }

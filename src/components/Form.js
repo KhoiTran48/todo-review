@@ -40,7 +40,7 @@ class Form extends Component {
 
                     <form action="" method="POST" className="form-horizontal" role="form" onSubmit={this.saveTask}>
                         <div className="form-group">
-                            Thêm Công Việc
+                            {taskForm.id === 0 ? 'Thêm Công Việc': 'Sửa Công Việc'}
                             <i className="fas fa-backspace text-right" onClick={this.toggleForm} ></i>
                         </div>
 

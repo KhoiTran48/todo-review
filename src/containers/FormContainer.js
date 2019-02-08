@@ -25,10 +25,10 @@ const mapStateToProps=(state)=>{
 const mapDispatchToProps=(dispatch, props)=>{
     return {
         onAddTask: (taskForm)=>{
-            dispatch(Action.ADD_TASK_REQUEST(taskForm))
+            dispatch(Action.ADD_TASK(taskForm))
         },
         onEditTask: (taskForm)=>{
-            dispatch(Action.EDIT_TASK_REQUEST(taskForm))
+            dispatch(Action.EDIT_TASK(taskForm))
         },
         changeInput: (taskForm)=>{
             dispatch(Action.CHANGE_INPUT(taskForm))
